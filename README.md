@@ -52,7 +52,7 @@ Routes contain:
    During get, delete and update Validation is checked.
    
  
-  env:  
+  env 
   
       : data base url,secret token of access token and refresh token are kept in this so that know one can access it 
       : env files are put in .gitignore (Notes I have not made .gitignore file)
