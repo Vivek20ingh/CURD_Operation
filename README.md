@@ -9,6 +9,7 @@ Model
 Authentication contain: 
       Registration : registration of new user. email.id and username of each user is unique;
                    : password is encrypted using bcrypt
+                   : http://localhost:3000/api/register
                    
       login        :    login of user using email and password. without login user cannot 
                         perform get,update and delete .
@@ -17,9 +18,11 @@ Authentication contain:
                    :    access token will expire after a set time which we can get from
                         posttoken which will generate another access token for set time.
                    :    user can perform only their id get update and delete.
+                   :    http://localhost:3000/api/login
                    
-      token        :   it will generate new access token when current access token will expire 
-                       after set time for another set time.
+      token        :   it will generate new access token when current access token will expire after set time for another set time.
+                   :  http://localhost:3000/api/posttoken
+                       
        
       Validation   :   validation of email, password,name,username,country,city that is require.
                    :   hapi/joi have used for valididation.
@@ -32,6 +35,7 @@ Routes contain:
       Get          : after verification of access token user can get all details of user ie
                      name, username, city and country. User can get detail of only of its 
                      own id.
+                    : http://localhost:3000/api/get  
                      
       Update      :  after verification of access token user can get all Update of user ie
                      password name, username, city and country. User can get detail of only of its own id.
@@ -39,8 +43,10 @@ Routes contain:
                   :  when username will update it will check when another user of with same
                      username exit or not. updation will be valid if new username is same as current user or new user don't exits in database.
                   :  during updation Validation is also done.
+                  : http://localhost:3000/api/update
                  
       Delete      : after verification of access token user can get delete all its data.
+                  : http://localhost:3000/api/delete
       
    During get, delete and update Validation is checked.
    
