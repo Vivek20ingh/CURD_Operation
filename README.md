@@ -1,4 +1,4 @@
-# CURD_Operation
+# CRUD_Operation
 
 Project is divided in Authentication Routes and models
 
