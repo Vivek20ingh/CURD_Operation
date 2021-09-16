@@ -46,14 +46,20 @@ Routes contain:
    
  
 .env  : data base url,secret token of access token and refresh token are kept in this so that know one can access it.
-      : .env files are put in .gitignore (Notes I have not made .gitignore file)
+
+      : env files are put in .gitignore (Notes I have not made .gitignore file)
       
 Dependencies:
      hapi/joi : for validation of email ,size of string, and required.
+     
      bcrypt  : for password encryption of password.
+     
      dotenv  : for keeping secret code.
+     
      jsonwebtoken: for generating access and refresh token after login.
+     
      nodemon     : for restarting server automatically
+     
      mongoose    : for manganing database mongodb
     
                      
