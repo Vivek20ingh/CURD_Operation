@@ -35,18 +35,18 @@ Routes contain:
                      own id.
                      
       Update      :  after verification of access token user can get all Update of user ie
-                     password name, username, city and country. User can get detail of only                        of its own id.
+                     password name, username, city and country. User can get detail of only of its own id.
                   :  password will update in encrypted form.
                   :  when username will update it will check when another user of with same
-                     username exit or not. updation will be valid if new username is same as                      current user or new user don't exits in database.
-                 :   during updation Validation is also done.
+                     username exit or not. updation will be valid if new username is same as current user or new user don't exits in database.
+                  :   during updation Validation is also done.
                  
       Delete      : after verification of access token user can get delete all its data.
       
    During get, delete and update Validation is checked.
    
  
-.env : data base url,secret token of access token and refresh token are kept in this so that        know one can access it.
+.env  : data base url,secret token of access token and refresh token are kept in this so that know one can access it.
       : .env files are put in .gitignore (Notes I have not made .gitignore file)
       
 Dependencies:
@@ -55,7 +55,7 @@ Dependencies:
      dotenv  : for keeping secret code.
      jsonwebtoken: for generating access and refresh token after login.
      nodemon     : for restarting server automatically
-     mongoose     : for manganing database mongodb
+     mongoose    : for manganing database mongodb
     
                      
                      
