@@ -55,6 +55,7 @@ Routes contain:
   env:  data base url,secret token of access token and refresh token are kept in this so that know one can access it and env files are put in .gitignore (Notes I have not made .gitignore file)
       
 Dependencies:
+
      hapi/joi : for validation of email ,size of string, and required.
      
      bcrypt  : for password encryption of password.
