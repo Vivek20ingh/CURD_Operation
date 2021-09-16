@@ -7,8 +7,8 @@ Model
                   email,passord,name,username,country and city
 
 Authentication contain: 
-      Registration  
-                   :registration of new user. email.id and username of each user is unique;
+      
+     Registration  :registration of new user. email.id and username of each user is unique;
                    : password is encrypted using bcrypt
                    : http://localhost:3000/api/register
                    
