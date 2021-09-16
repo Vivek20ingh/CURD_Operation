@@ -18,11 +18,10 @@ Authentication contain:
                         posttoken which will generate another access token for set time.
                    :    user can perform only their id get update and delete.
                    
-      token        :   it will generate new access token when current access token will
-                         expire 
+      token        :   it will generate new access token when current access token will expire 
                        after set time for another set time.
        
-      Validation   :   validation of email, password,name,username,country,city that is                              require.
+      Validation   :   validation of email, password,name,username,country,city that is require.
                    :   hapi/joi have used for valididation.
       
       verify       : verification of access token to perform get, update and delete
@@ -39,7 +38,7 @@ Routes contain:
                   :  password will update in encrypted form.
                   :  when username will update it will check when another user of with same
                      username exit or not. updation will be valid if new username is same as current user or new user don't exits in database.
-                  :   during updation Validation is also done.
+                  :  during updation Validation is also done.
                  
       Delete      : after verification of access token user can get delete all its data.
       
